@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="shortcut icon" href="img/calculator_icon-icons.com_72046 (1).ico" type="image/x-icon">
+    <!-- bulma.io  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <style>
+        .lp {
+            width: 70px;
+        }
+
+        .lr {
+            width: 50px;
+        }
+
+        .control {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <section class="hero is-dark is-fullheight">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <div class="column is-4 is-offset-4">
+                        <h3 class="title has-text-black">Calculadora</h3>
+                        <hr class="login-hr">
+                        <div class="box">
+                          <form name="field">
+                            <div class="field">
+                                <div class="container">
+                                        <input class="input is-primary" type="text" style="text-align: right;" placeholder="0" name="pantalla">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <input type="button" class="button lr is-dark is-outlined" value="1" onclick="escribir('1')">
+                                    <input type="button" class="button lr is-dark is-outlined" value="2" onclick="escribir('2')">
+                                    <input type="button" class="button lr is-dark is-outlined" value="3" onclick="escribir('3')">
+                                    <input type="button" class="button lp is-info is-outlined" value="+" onclick="escribir('+')">
+                                </div>
+                                <!-- &#43; -->
+                                <div class="control">
+                                    <input type="button" class="button lr is-dark is-outlined" value="4" onclick="escribir('4')">
+                                    <input type="button" class="button lr is-dark is-outlined" value="5" onclick="escribir('5')">
+                                    <input type="button" class="button lr is-dark is-outlined" value="6" onclick="escribir('6')">
+                                    <input type="button" class="button lp is-info is-outlined" value="-" onclick="escribir('-')">
+                                </div>
+                                <div class="control">
+                                    <input type="button" class="button lr is-dark is-outlined" value="7" onclick="escribir('7')">
+                                    <input type="button" class="button lr is-dark is-outlined" value="8" onclick="escribir('8')">
+                                    <input type="button" class="button lr is-dark is-outlined" value="9" onclick="escribir('9')">
+                                    <input type="button" class="button lp is-info is-outlined" value="*" onclick="escribir('*')">
+                                </div>
+                                <div class="control">
+                                    <input type="button" class="button lr is-info is-outlined" value="Borrar" onclick="document.field.reset()">
+                                    <input type="button" class="button lr is-dark is-outlined" value="0" onclick="escribir('0')">
+                                    <input type="button" class="button lr is-dark is-outlined" value="=" onclick="calcular()">
+                                    <input type="button" class="button lp is-info is-outlined" value="/" onclick="escribir('/')">
+                                </div>
+                            </div>
+                          </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./js/code.js"></script>
+    <!-- <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script> -->
+</body>
+
+</html>
